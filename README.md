@@ -1240,9 +1240,7 @@ Thanks to all the contributors who have helped make ShopHub better!
 **Project Maintainer**: Jatin Jaiswal
 
 - GitHub: [@Jatin-Jaiswal](https://github.com/Jatin-Jaiswal)
-- Email: jatin@shophub.com
-- LinkedIn: [Your LinkedIn](#)
-- Twitter: [@ShopHub](#)
+- Email: jatinjaiswal673@gmail.com
 
 ---
 
