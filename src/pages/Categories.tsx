@@ -4,6 +4,7 @@ import { Header } from '@/components/Header';
 import { Card, CardContent } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
 import { supabase } from '@/integrations/supabase/client';
+import getCategoryImage from '@/lib/defaultImages';
 
 export default function Categories() {
   const [categories, setCategories] = useState<any[]>([]);
@@ -55,7 +56,9 @@ export default function Categories() {
                 <Card className="group overflow-hidden transition-all hover:shadow-lg">
                   <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
                     <img
-                      src={category.image_url || '/placeholder.svg'}
+                      src={
+                        category.image_url || getCategoryImage(category.slug) || '/placeholder.svg'
+                      }
                       alt={category.name}
                       className="h-full w-full object-cover transition-transform group-hover:scale-105"
                     />

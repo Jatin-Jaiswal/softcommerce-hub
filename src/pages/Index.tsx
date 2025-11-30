@@ -5,6 +5,7 @@ import { ProductCard } from '@/components/ProductCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { supabase } from '@/integrations/supabase/client';
+import getCategoryImage from '@/lib/defaultImages';
 import { ArrowRight, Star, ShoppingBag } from 'lucide-react';
 
 const Index = () => {
@@ -104,7 +105,7 @@ const Index = () => {
                   className="group relative aspect-[4/3] overflow-hidden rounded-lg"
                 >
                   <img
-                    src={category.image_url || '/placeholder.svg'}
+                    src={category.image_url || getCategoryImage(category.slug) || '/placeholder.svg'}
                     alt={category.name}
                     className="h-full w-full object-cover transition-transform group-hover:scale-105"
                   />

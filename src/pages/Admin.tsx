@@ -76,7 +76,7 @@ export default function Admin() {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
-              Admin functionality coming soon. Use Lovable Cloud backend to manage products, orders, and users.
+              Admin functionality coming soon. Use the backend dashboard to manage products, orders, and users.
             </p>
           </CardContent>
         </Card>
